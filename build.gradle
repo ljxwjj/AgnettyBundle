@@ -19,7 +19,9 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { // nammu
+            url "https://jitpack.io"
+        }
     }
 }
 

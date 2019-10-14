@@ -14,20 +14,12 @@
 package com.android.agnetty.external.helper.system;
 
 
-import java.lang.reflect.Constructor;
-import java.util.HashMap;
-
-import com.android.agnetty.external.helper.util.RefTool;
-
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
-import android.support.v4.app.FragmentActivity;
-import android.util.Log;
-import android.view.LayoutInflater;
+import androidx.fragment.app.FragmentActivity;
 
 /**
  * @author : Zhenshui.Xia

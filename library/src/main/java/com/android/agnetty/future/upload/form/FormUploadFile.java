@@ -13,7 +13,7 @@
 
 package com.android.agnetty.future.upload.form;
 
-import java.io.File;
+import android.net.Uri;
 
 /**
  * @author : Zhenshui.Xia
@@ -25,6 +25,8 @@ public class FormUploadFile {
 	private byte[] mData;    
 	//上传文件的路径
 	private String mPath;
+	//上传文件的Uri
+	private Uri mUri;
 	//文件名称 
 	private String mFileName;  
 	//请求参数名称
@@ -60,6 +62,11 @@ public class FormUploadFile {
 		this.mFileName = fileName;
 		this.mPath = path;
 		this.mContentType = contentType;
+	}
+
+	public FormUploadFile(String field, Uri uri) {
+		this.mField = field;
+		this.mUri = uri;
 	}
 	
 	/**
@@ -140,5 +147,13 @@ public class FormUploadFile {
 	 */
 	public String getContentType() {
 		return this.mContentType;
+	}
+
+	public void setUri(Uri uri) {
+		this.mUri = uri;
+	}
+
+	public Uri getUri() {
+		return this.mUri;
 	}
 }  
